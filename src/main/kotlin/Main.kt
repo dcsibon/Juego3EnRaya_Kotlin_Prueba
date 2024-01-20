@@ -16,7 +16,14 @@ fun printRow(row: IntArray) {
     println("-------------")
 }
 
-fun printBoard(board: Array<IntArray>) {
+fun printBoard_dcs(board: Array<IntArray>) {
+    // Mostrar en consola el tablero con las fichas
+    clearConsole()
+    println("-------------")
+    board.forEach { printRow(it) }
+}
+
+fun printBoard() {
     // Mostrar en consola el tablero con las fichas
     clearConsole()
     println("-------------")

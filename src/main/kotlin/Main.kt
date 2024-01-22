@@ -6,7 +6,6 @@ fun clearConsole_dcs(num: Int) {
 
 fun clearConsole(num: Int) {
     //TODO: Limpiar la consola con un número de saltos de línea pasados por parámetro
-
 }
 
 fun printRow(row: IntArray) {

@@ -1,4 +1,21 @@
-
+/*
+* Corregir los errores para que el juego funcione.
+* Documentar el código.
+* Realizar las siguientes mejoras o modificaciones en el código:
+    1. Salir del juego en cualquier momento si pulso la tecla ENTER sin introducir nada.
+    2. Incluir el texto: Turno del jugador 1 ó 2 según sea el caso.
+    3. Incluye una función para limpiar la consola... cómo no es posible en Kotlin, te propongo que tu método reciba un número y hagas un bucle dónde se imprima por consola un salto de línea tantas veces cómo el número que recibe.
+    4. Modifica el programa para controlar con try-catch errores a la hora de introducir la posición en el tablero, muestre un mensaje de error y vuelva a pedir la posición (fila o columna).
+    5. El juego debe mostrar el tablero cómo el siguiente:
+    -------------
+    | X |   |   |
+    -------------
+    |   | O |   |
+    -------------
+    |   |   | X |
+    -------------
+    6. Desarrolla la función que está solo declarada "checkWinner", para comprobar si algún jugador ha ganado.
+*/
 
 fun clearConsole_dcs(num: Int) {
     (1..num).forEach{ println() }
@@ -153,23 +170,3 @@ fun main() {
         currentPlayer = switchPlayer(currentPlayer)
     }
 }
-
-/*
-* Corregir los errores para que el juego funcione.
-* Documentar el código.
-* Realizar las siguientes mejoras o modificaciones en el código:
-    1. Salir del juego en cualquier momento si pulso la tecla ENTER sin introducir nada.
-    2. Incluir el texto: Turno del jugador 1 ó 2 según sea el caso.
-    3. Incluye una función para limpiar la consola... cómo no es posible en Kotlin, te propongo que tu método reciba un número y hagas un bucle dónde se imprima por consola un salto de línea tantas veces cómo el número que recibe.
-    4. Modifica el programa para controlar con try-catch errores a la hora de introducir la posición en el tablero, muestre un mensaje de error y vuelva a pedir la posición (fila o columna).
-    5. El juego debe mostrar el tablero cómo el siguiente:
-    -------------
-    | X |   |   |
-    -------------
-    |   | O |   |
-    -------------
-    |   |   | X |
-    -------------
-    6. Desarrolla la función que está solo declarada "checkWinner", para comprobar si algún jugador ha ganado.
-
-*/
